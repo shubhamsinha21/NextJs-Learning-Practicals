@@ -1,34 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+1. What is Next Js
+The ReactJs Framework for the web applications
+It is based on react js library and has many extra features such as routing, middleware, etc
+It is used to make single page app
 
-## Getting Started
+2. Why ahould we use Next js
+Make big project easy
+It has inbuilt features like - server side rendering (SSR) 
+SSR heps in SEO
+More features include- Routing, CSS support, nuilt in optimization features
 
-First, run the development server:
+3. Speciality - Production grade react framework
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Series start -: 
+##Chapter-1 :- Install node and next js + configuration of next js setup + run project + intrvw que  ##############
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##Chapter-2 :- Freshcode in page.js + make component + reuse it + data passing + intrvw que #############
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Q) export default - we can import that componentt by default. 
+No need to do like this => import {home} from "home/jome"
+we can do like this => import home from home/jome;
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Q) What is component - piece of code which is re-usable. they are building blocks. Types are class based & functional based
 
-## Learn More
+Q) Difference between function & component - codes written in a function need not return output but in case of component, it will return output as we have JSX consists of both js as well as html. And first letter of component will be capital.
 
-To learn more about Next.js, take a look at the following resources:
+Q) Is react code work in next - yes, because next is a framework or react
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Q) how to pass data in compoennt - via props
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Q) Js vs Ts - Automatic type conversion in js but in ts we have to mention. And browser do not understsand ts, first code is converted from ts->js. Then it reads the code.
 
-## Deploy on Vercel
+Q) Server side rendering vs client side rendering 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+##Chapter-3 :-Events + make function and call + call component as function + make state and update + intrvw que ###########
