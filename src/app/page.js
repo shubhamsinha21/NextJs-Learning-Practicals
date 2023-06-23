@@ -12,13 +12,20 @@ export default function Home() {
     alert("i m boss")
   }
   // 2nd way
-  const mango = (item) => {
+  const mango = (item) =>
     alert(item)
-  }
+
 
   const [name, setName] = useState("anil")
   const updateName = () => {
     setName("siddhu")
+  }
+
+  // creating component inside component
+  const InnerComponent = () => {
+    return (
+      <h2>Inner Component</h2>
+    )
   }
   return (
     <main className={styles.main}>
@@ -35,6 +42,11 @@ export default function Home() {
       <h3>{name}</h3>
       <button onClick={updateName} style={{ padding: "4px", color: "green", backgroundColor: "black" }}
       >Click me</button>
+
+      {/* calling componeny=t created inside the main component */}
+      <InnerComponent />
+      {/* calling the component as a function  */}
+      {InnerComponent()}
 
     </main>
   )
