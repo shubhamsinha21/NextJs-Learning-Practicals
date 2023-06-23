@@ -1,10 +1,17 @@
 'use client'
 import { useState } from 'react'
+import Link from 'next/link'
 // always at the top
 // no need to include it into child files/ components
 import styles from './page.module.css'
 
+//importing useRouter hook
+import { useRouter } from 'next/navigation'
+
 export default function Home() {
+  //calling useRouter hook
+  const router = useRouter();
+
 
   // creating function
   //1st way
@@ -27,6 +34,10 @@ export default function Home() {
       <h2>Inner Component</h2>
     )
   }
+
+  const navigate = (route) => {
+    router.push(route)
+  }
   return (
     <main className={styles.main}>
       <h1>Home Page</h1>
@@ -47,6 +58,13 @@ export default function Home() {
       <InnerComponent />
       {/* calling the component as a function  */}
       {InnerComponent()}
+
+
+      {/* Linking & Navigation */}
+      <Link href="/login">Go to Login Page</Link>
+      <Link href="/about">Go to About Page</Link>
+      <button onClick={() => router.push("/login")}>Go to Login</button>
+      <button onClick={() => navigate("/about")}>Go to About</button>
 
     </main>
   )
