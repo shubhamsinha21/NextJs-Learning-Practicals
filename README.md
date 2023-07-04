@@ -58,13 +58,13 @@ BY DEFAULT, EVERY COMPONENT IN NEXT JS IS SERVER SIDE COMPONENT, WE CAN MAKE IT 
 
 Q) components based on rendering - server & client
 Q) client vs server
-Q) can we use both ? - yes, ui reld on client side && data fetch and server side on server
+Q) can we use both ? > yes, ui reld on client side && data fetch and server side on server
 Q) brower api - client side
 
 ##Chapter-6 Routing - #########
 
 Q) pattern for creating page in next js - src/folder_name/page.js (localhost:3000/login/page.js)
 
-Q) do we need to install any package for routing in next js - no , we have automatic routuing in next js .. which is based on file system routing
+Q) do we need to install any package for routing in next js - no , we have automatic routuing in next js .. which is based on file system routing. 
 
 
